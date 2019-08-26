@@ -87,12 +87,12 @@ class streamValidation
 		if( (found and type==BLACKLIST) or (not found and type==WHITELIST) )
 		{
 			// Let the user know
-			server.say("#110000", uid, FROM_SERVER);
- 			server.say("#110000============WARNING============", uid, FROM_SERVER); 
+			server.say("#FF000", uid, FROM_SERVER);
+ 			server.say("#FF000============WARNING============", uid, FROM_SERVER); 
 			server.say("#FF000 This vehicle is not allowed on this server!", uid, FROM_SERVER); 
 			server.say("#FF000 All moderators and/or admins on the server have been messaged and you are now subject to being kicked!", uid, FROM_SERVER); 
-			server.say("#110000===============================", uid, FROM_SERVER); 
-			server.say("#110000", uid, FROM_SERVER); 
+			server.say("#FF000===============================", uid, FROM_SERVER); 
+			server.say("#FF000", uid, FROM_SERVER); 
 			
 			// Let the informants know
 			string msg = "User '"+server.getUserName(uid)+"' with uid ("+uid+") has spawned a '"+name+"', which is a banned vehicle.";
